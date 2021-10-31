@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/4bc68e34da.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="./css/mobile.css"
+      media="screen and (max-width: 768px)"
+    />
+    <link
+      rel="stylesheet"
+      href="./css/widescreen.css"
+      media="screen and (min-width: 1100px)"
+    />
+    <title>Санхүү Эдийн Засгийн Их Сургууль</title>
+  </head>
+  <body id="home">
+    <!-- Үндсэн цэс -->
+    <nav>
+      <h1 class="logo">Санхүү Эдийн Засгийн Их Сургууль</h1>
+      <ul>
+        <li><a href="#home">Нүүр</a></li>
+        <li><a href="#what">Үйлчилгээ</a></li>
+        <li><a href="#who">Бид</a></li>
+        <li><a href="#contact">Холбогдох</a></li>
+      </ul>
+    </nav>
+    <!-- Header: Showcase -->
+    <header>
+      <div class="showcase-content">
+        <h1 class="l-heading">
+          Санхүү Эдийн Засгийн Их Сургуульд <br />
+          тавтай морил
+        </h1>
+        <p class="lead">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea error
+          harum, nobis nostrum velit minus?
+        </p>
+        <a href="#what" class="btn">Дэлгэрэнгүй</a>
+      </div>
+    </header>
+    <!-- Section: Бид юу хийдэг вэ? -->
+    <section id="what" class="bg-light py-1">
+      <div class="container">
+        <h2 class="m-heading text-center">Бидний тухай</h2>
+        <div class="items">
+          <div class="item">
+            <i class="fa fa-university" aria-hidden="true"></i>
+            <h3>Сургалтын чанар</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil,
+              libero.
+            </p>
+          </div>
+          <div class="item">
+            <i class="fas fa-book-reader fa-2x"></i>
+            <h3>Хичээлийн бүртгэл</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil,
+              libero.
+            </p>
+          </div>
+          <div class="item">
+            <i class="fas fa-pencil-alt fa-2x"></i>
+            <h3>Төлбр төлөх</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil,
+              libero.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section: Бид хэн бэ? -->
+    <section id="who">
+      <div class="who-img"></div>
+      <div class="who-text bg-dark p-2">
+        <h2 class="m-heading">Юу хийдэг вэ ?</h2>
+        <p>
+          1924 он байгуулагдсан Монгол улсын ууган сургуулиудын нэг бөгөөд
+          Үндэсний ба Олон улсын түвшинд магадлан итгэмжлэгдсэн их сургууль юм.
+        </p>
+      </div>
+    </section>
+    <!-- Section Contact -->
+    <section id="contact">
+      <div class="contact-form bg-primary p-2">
+        <h2 class="m-heading">Бидэнтэй холбоо барих</h2>
+        <p>Доорхи талбаруудыг бөглөн бидэнтэй холбоо барина уу</p>
+        <form>
+          <div class="form-group">
+            <label for="name">Нэр</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Нэрээ оруулна уу"
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Оюутны код</label>
+            <input
+              type="text"
+              name="student-code"
+              id="student-code"
+              placeholder="Оюутны кодоо оруулна уу"
+            />
+          </div>
+          <div class="form-group">
+            <label for="phone">Утасны дугаар</label>
+            <input
+              type="text"
+              name="phone"
+              id="phone"
+              placeholder="Утасны дугаараа оруулна уу"
+            />
+          </div>
+          <div class="form-group">
+            <label for="msg">Мессеж</label>
+            <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+          </div>
+          <input type="submit" value="Илгээх" class="btn btn-dark" />
+        </form>
+      </div>
+      <div class="map"></div>
+    </section>
+    <footer id="main-footer" class="bg-dark text-center py-1">
+      <div class="container">
+        <p>Зохиогчийн эрх хуулиар хамгаалагдсан</p>
+      </div>
+    </footer>
+    <script src="/js/main.js"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA6JlyrYN88qbfWRM-x4RF24wVDXNxpOkc&callback=initMap&v=weekly"
+      async
+    ></script>
+  </body>
+</html>

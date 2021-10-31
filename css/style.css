@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.8rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0.75rem 0;
+}
+
+/* Utility Class Style */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-primary {
+  color: #93cb52;
+}
+
+.bg-light {
+  background: #f4f4f4;
+  color: #333;
+}
+
+.bg-dark {
+  background: #333;
+  color: #f4f4f4;
+}
+
+.bg-primary {
+  background-color: #93cb52;
+  color: #fff;
+}
+
+.l-heading {
+  font-size: 4rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.1;
+}
+
+.m-heading {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.1;
+}
+
+.lead {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  background: #93cb52;
+  color: #fff;
+  padding: 0.5rem 2rem;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: #7ab436;
+}
+
+.btn-dark {
+  background-color: #333;
+  color: #fff;
+}
+
+.py-1 {
+  padding: 1.5rem 0;
+}
+.py-2 {
+  padding: 2rem 0;
+}
+.py-3 {
+  padding: 3rem 0;
+}
+
+.p-1 {
+  padding: 1.5rem;
+}
+.p-2 {
+  padding: 2rem;
+}
+.p-3 {
+  padding: 3rem;
+}
+
+.list {
+  margin: 0.5rem;
+  list-style: none;
+}
+
+.list li {
+  padding: 0.5rem 0;
+  border-bottom: 1px dotted #444;
+}
+
+/* Үндсэн цэс */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #333;
+  color: #fff;
+  z-index: 1;
+  padding: 1rem;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+nav ul li a {
+  color: #fff;
+  padding: 0.75rem;
+  margin: 0 0.25rem;
+}
+
+nav ul li a:hover {
+  background-color: #93cb52;
+  border-radius: 5px;
+}
+
+/* Showcase */
+header {
+  background: #333
+    url("https://scontent.fuln1-1.fna.fbcdn.net/v/t1.15752-9/248288700_3039256746288089_8244423617830891305_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=ae9488&_nc_ohc=gMqF6bv-eL0AX_2dj13&_nc_ht=scontent.fuln1-1.fna&oh=d2c21699656cdf32592243da5d2c98ac&oe=61A4E217")
+    no-repeat center center/cover;
+  height: 100vh;
+  color: #fff;
+}
+
+.showcase-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0 2rem;
+  /* Overlay */
+  position: absolute;
+  top: 60px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+/* Section what */
+
+#what .items {
+  display: flex;
+  padding: 1rem;
+}
+
+#what .items .item {
+  flex: 1;
+  text-align: center;
+  padding: 1rem;
+}
+
+#what .items .item i {
+  background: #93cb52;
+  border-radius: 50%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Section: who */
+#who {
+  display: flex;
+  height: 60vh;
+}
+
+#who div {
+  flex: 1;
+  height: 100%;
+  font-size: 2.5rem;
+  line-height: 3rem;
+}
+
+#who .who-img {
+  background: url("https://scontent.fuln1-2.fna.fbcdn.net/v/t1.15752-9/250743222_609616486844765_2918311008339766989_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=ae9488&_nc_ohc=D2_ggyOh01gAX8HVfc8&_nc_ht=scontent.fuln1-2.fna&oh=93b0ed4ae925d215c59f40cd0c2d5a6b&oe=61A4A550")
+    no-repeat center center/cover;
+  height: 100%;
+}
+
+/* Section: client */
+#clients .items {
+  display: flex;
+}
+
+#clients .items img {
+  display: block;
+  margin: auto;
+  width: 60%;
+}
+
+/* Section: contact */
+#contact {
+  display: flex;
+}
+
+#contact form,
+.map {
+  flex: 1;
+}
+
+#contact .contact-form .form-group {
+  margin: 0.75rem;
+}
+
+#contact .contact-form label {
+  display: block;
+}
+
+#contact .contact-form input,
+#contact .contact-form textarea {
+  width: 100%;
+  padding: 0.5rem;
+}
